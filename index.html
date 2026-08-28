@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SupplyPro | Supply Insights</title>
+  <style>
+    :root {
+      --brand: #0f3f66;
+      --accent: #19a9e5;
+      --bg: #f6f9fc;
+      --text: #1a2530;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--brand), #0b2942);
+      color: #fff;
+      padding: 3rem 1.25rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+    }
+
+    .lead {
+      font-size: 1.125rem;
+      max-width: 760px;
+      margin: 0.75rem auto 0;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #dde7f0;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--accent);
+      color: #002338;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 6px;
+      padding: 0.7rem 1rem;
+    }
+
+    footer {
+      background: #0a1d2d;
+      color: #c2d6e9;
+      text-align: center;
+      padding: 1.25rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SupplyPro Supply Insights</h1>
+    <p class="lead">AI-enabled supply planning and inventory optimization for complex manufacturers.</p>
+    <a class="cta" href="#contact">Schedule a Demo</a>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>How SupplyPro Helps</h2>
+      <div class="grid">
+        <article class="card"><h3>Reliable Inventory Data</h3><p>Centralize part, supplier, and demand data in one operational view.</p></article>
+        <article class="card"><h3>Actionable Insights</h3><p>Prioritize shortages, excess, and expediting risks with guided actions.</p></article>
+        <article class="card"><h3>Agile Response Planning</h3><p>Coordinate planning, procurement, and operations with shared priorities.</p></article>
+        <article class="card"><h3>Automated Workflows</h3><p>Drive daily task execution through role-based recommendations.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Who Uses SupplyPro</h2>
+      <div class="grid">
+        <article class="card"><h3>Industries</h3><p>Aerospace, automotive, industrial equipment, and medical device manufacturing.</p></article>
+        <article class="card"><h3>Teams</h3><p>Planners, buyers, supplier managers, and operations leaders.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Platform Modules</h2>
+      <div class="grid">
+        <article class="card"><h3>Procurement Management</h3><p>Manage supplier execution and commitment from a single command center.</p></article>
+        <article class="card"><h3>Inventory Optimization</h3><p>Balance service levels and working capital using prescriptive analytics.</p></article>
+        <article class="card"><h3>AI Assistant</h3><p>Get fast answers on material risk, priorities, and recommended next actions.</p></article>
+        <article class="card"><h3>Data &amp; AI Engine</h3><p>Connect ERP and operational datasets to power continuous insight generation.</p></article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Results Teams Can Expect</h2>
+      <div class="grid">
+        <article class="card"><h3>Lower Shortages</h3><p>Reduce stockouts through early risk detection and faster decision-making.</p></article>
+        <article class="card"><h3>Less Excess</h3><p>Identify excess inventory and rebalance supply before capital gets trapped.</p></article>
+        <article class="card"><h3>Better Supplier Performance</h3><p>Improve on-time delivery with shared visibility and measurable accountability.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Talk to SupplyPro</h2>
+      <p>See how SupplyPro Supply Insights can modernize your supply chain execution.</p>
+      <a class="cta" href="mailto:hello@supplypro.com">Contact Sales</a>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> SupplyPro. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
