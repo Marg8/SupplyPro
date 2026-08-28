@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: supplypro
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: "8080"
